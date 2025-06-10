@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damini's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>DAMINI SETUPATTU LOKAIAH</h1>
+    <h2>FRONTEND WEB DEVELOPER</h2>
+    <div>
+      <p>📧 daminilokaiah008@gmail.com |
+        <a href="https://www.linkedin.com/in/damini-setupattu-lokaiah" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <p class="summary">
+      Creative and detail-oriented Front-End Developer with proven experience in building responsive, accessible, and
+      visually compelling web applications that enhance user engagement. Passionate about intuitive UI/UX design and
+      modern web technologies including HTML, CSS, JavaScript, and Angular. Skilled in optimizing web performance and
+      cross-platform usability. My expertise also includes machine learning concepts and data analysis tools such as
+      Excel, SQL, Power BI, and Python.
+    </p>
+
+    <button onclick="window.open('resume/DAMINI_SETUPATTU_LOKAIAH_RESUME.pdf', '_blank')">View Resume</button>
+
+
+    <section class="experience">
+      <h3>Experience</h3>
+      <div class="experience-entry">
+        <h4>Front-End Web Developer</h4>
+        <h5 class="company">Cognizant Technology Solutions (2021 - 2023)</h5>
+        <ul>
+          <li>Developed responsive web applications using Angular, HTML, CSS, and JavaScript.</li>
+          <li>Improved UI/UX through accessible, mobile-first design strategies.</li>
+          <li>Optimized web performance and ensured cross-browser compatibility.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill"><img src="./images/html-5.svg" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill"><img src="./images/file-type-css.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill"><img src="./images/javascript.svg" alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill"><img src="./images/angularjs-original.svg" alt="Angular">
+          <p>Angular</p>
+        </div>
+        <div class="skill"><img src="./images/react-original-wordmark.svg" alt="React">
+          <p>React</p>
+        </div>
+        <div class="skill"><img src="./images/web-developer.svg" alt="UI/UX">
+          <p>UI/UX</p>
+        </div>
+        <div class="skill"><img src="./images/sql-database-generic.svg" alt="SQL">
+          <p>SQL</p>
+        </div>
+        <div class="skill"><img src="./images/ms-excel.svg" alt="Excel">
+          <p>Excel</p>
+        </div>
+        <div class="skill"><img src="./images/power-bi.svg" alt="Power BI">
+          <p>Power BI</p>
+        </div>
+        <div class="skill"><img src="./images/python.svg" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill"><img src="./images/machine-learning-model.svg" alt="Machine Learning">
+          <p>Machine Learning</p>
+        </div>
+        <div class="skill"><img src="./images/safety-certificate-fill-system.svg" alt="Canva">
+          <p>Canva</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h3>Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-item">
+          <p>Angular - The Complete Guide (Udemy)</p>
+          <button onclick="viewCert('CERTIFICATIONS/Angular certificate Udemy.pdf')">View Certificate</button>
+        </div>
+        <div class="cert-item">
+          <p>Build Responsive Real-World Websites with HTML & CSS (Udemy)</p>
+          <button onclick="viewCert('CERTIFICATIONS/Html And Css certificate Udemy.pdf')">View Certificate</button>
+        </div>
+        <div class="cert-item">
+          <p>Python for Absolute Beginners (Udemy)</p>
+          <button onclick="viewCert('CERTIFICATIONS/Udemy Python for Beginners certificate.pdf')">View
+            Certificate</button>
+        </div>
+        <div class="cert-item">
+          <p>Canva Social Media Creation (Udemy)</p>
+          <button onclick="viewCert('CERTIFICATIONS/Canva certificate Udemy.pdf')">View Certificate</button>
+        </div>
+        <div class="cert-item">
+          <p>IELTS 7 Plus (Udemy)</p>
+          <button onclick="viewCert('CERTIFICATIONS/IELTS 7 Plus.pdf')">View Certificate</button>
+        </div>
+        <div class="cert-item">
+          <p>Machine Learning (FITA Academy)</p>
+          <button onclick="viewCert('CERTIFICATIONS/ML Certificate - FITA Academy.pdf')">View Certificate</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h3>Projects</h3>
+      <div class="card-container">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>Head-Controlled Mouse</h4>
+              <p>AI-based interface for users with limited mobility.</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="./projects/project1.png" alt="Head-Controlled Mouse">
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h4>LORA-Based Trooper Monitoring</h4>
+              <p>Smart footwear tracking soldiers in real-time.</p>
+            </div>
+            <div class="flip-card-back">
+              <img src="./projects/project2.jpg" alt="Trooper Monitoring">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <p><strong>Master of Science in Computer Science</strong> – Auburn University at Montgomery</p>
+      <p><strong>Bachelor of Engineering in Electronics and Communication</strong> – GRT Institute of Engineering and
+        Technology</p>
+    </section>
+  </div>
+
+  <script>
+    function viewCert(fileName) {
+      window.open(fileName, '_blank');
+    }
+  </script>
+</body>
+
+</html>
